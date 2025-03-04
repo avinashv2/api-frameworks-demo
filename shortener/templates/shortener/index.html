@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form method="POST">
+        {% csrf_token %}
+        URL to shorten: <input type="text" name="url" required>
+        <button type="submit">Shorten URL</button>
+    </form>
+</body>
+</html>
